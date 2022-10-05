@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Api";
+package Notification.Protos;
+import "google/protobuf/empty.proto";
+service NotificationService
+{
+	rpc ResetPassword(ResetPasswordRequest) returns (google.protobuf.Empty);
+}
+
+message ResetPasswordRequest
+{
+	string email =1 ;
+	string token =2 ;
+}
+
+
