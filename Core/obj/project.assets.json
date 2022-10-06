@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\radoslaw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Core\\obj\\",
+      "outputPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\radoslaw\\AppData\\Roaming\\NuGet\\NuGet.Config",

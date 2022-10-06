@@ -27,5 +27,28 @@ namespace Api.Controllers
             await _commandDispatcher.SendAsync(sendEmailCommand);
             return new();
         }
+
+        public override async Task<Empty> ChangeEmail(ChangeEmailRequest request,ServerCallContext context)
+        {
+            var notificationId = Guid.NewGuid();
+            var saveDataCommand = new SaveChangeEmailDataCommand(request.Email, request.Token, request.UserId, notificationId);
+            await _commandDispatcher.SendAsync(saveDataCommand);
+
+            var sendDataCommand = new SendChangeEmailCommand(request.Email, request.Token, notificationId);
+            await _commandDispatcher.SendAsync(sendDataCommand);
+            return new();
+        }
+
+        public override async Task<Empty> ConfirmEmail(ConfirmEmailRequest request,ServerCallContext context)
+        {
+            var notificationId = Guid.NewGuid();
+            var saveDataCommand = new SaveConfirmEmailDataCommand(request.Email, request.Token,
+                request.Username, request.Firstname, request.Lastname, request.Userid,notificationId);
+            await _commandDispatcher.SendAsync(saveDataCommand);
+
+            var sendDataCommand = new SendConfirmEmailCommand(request.Email, request.Token, notificationId);
+            await _commandDispatcher.SendAsync(sendDataCommand);
+            return new();
+        }
     }
 }

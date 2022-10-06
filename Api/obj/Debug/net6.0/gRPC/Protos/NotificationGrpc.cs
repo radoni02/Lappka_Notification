@@ -49,6 +49,10 @@ namespace Api {
     static readonly grpc::Marshaller<global::Api.ResetPasswordRequest> __Marshaller_Notification_Protos_ResetPasswordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Api.ResetPasswordRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Api.ChangeEmailRequest> __Marshaller_Notification_Protos_ChangeEmailRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Api.ChangeEmailRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Api.ConfirmEmailRequest> __Marshaller_Notification_Protos_ConfirmEmailRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Api.ConfirmEmailRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Api.ResetPasswordRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_ResetPassword = new grpc::Method<global::Api.ResetPasswordRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -56,6 +60,22 @@ namespace Api {
         __ServiceName,
         "ResetPassword",
         __Marshaller_Notification_Protos_ResetPasswordRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Api.ChangeEmailRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_ChangeEmail = new grpc::Method<global::Api.ChangeEmailRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ChangeEmail",
+        __Marshaller_Notification_Protos_ChangeEmailRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Api.ConfirmEmailRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_ConfirmEmail = new grpc::Method<global::Api.ConfirmEmailRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ConfirmEmail",
+        __Marshaller_Notification_Protos_ConfirmEmailRequest,
         __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
@@ -74,6 +94,18 @@ namespace Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> ChangeEmail(global::Api.ChangeEmailRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> ConfirmEmail(global::Api.ConfirmEmailRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -82,7 +114,9 @@ namespace Api {
     public static grpc::ServerServiceDefinition BindService(NotificationServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_ResetPassword, serviceImpl.ResetPassword).Build();
+          .AddMethod(__Method_ResetPassword, serviceImpl.ResetPassword)
+          .AddMethod(__Method_ChangeEmail, serviceImpl.ChangeEmail)
+          .AddMethod(__Method_ConfirmEmail, serviceImpl.ConfirmEmail).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -93,6 +127,8 @@ namespace Api {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, NotificationServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_ResetPassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Api.ResetPasswordRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.ResetPassword));
+      serviceBinder.AddMethod(__Method_ChangeEmail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Api.ChangeEmailRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.ChangeEmail));
+      serviceBinder.AddMethod(__Method_ConfirmEmail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Api.ConfirmEmailRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.ConfirmEmail));
     }
 
   }

@@ -24,5 +24,16 @@ namespace Infrastructure.Repositories
             return await _context.appUsers.FirstOrDefaultAsync(x => x.Email==email);
         }
 
+        public async Task<AppUser> GetUserById(Guid id)
+        {
+            return await _context.appUsers.FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task CreateUserData(AppUser obj)
+        {
+            await _context.appUsers.AddAsync(obj);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

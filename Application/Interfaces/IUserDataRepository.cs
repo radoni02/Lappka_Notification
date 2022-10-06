@@ -10,5 +10,7 @@ namespace Application.Interfaces
     public interface IUserDataRepository
     {
         Task<AppUser> GetUserByEmail(string email);
+        Task<AppUser> GetUserById(Guid id);
+        Task CreateUserData(AppUser obj);
     }
 }

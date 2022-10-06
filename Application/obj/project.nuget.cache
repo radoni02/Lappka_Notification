@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f0asAduyTlpuSdt+KwHfzhGk+FjDxx5Nod+DRzHbVu3OGeiF4fGe7zZFPcjITdH57oSVWe843GBBWzqC2rvuaw==",
+  "dgSpecHash": "PLtkEe1Sa4tUsUM5GKoLs09my79j5R1eYnSsC3PPsZ3N7AeMY1g36WrKNkpBzNg6y4Y7nRWo60g+czGFO29qOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radoslaw\\.nuget\\packages\\convey\\1.0.541\\convey.1.0.541.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\convey.cqrs.commands\\1.0.541\\convey.cqrs.commands.1.0.541.nupkg.sha512",

@@ -5816,11 +5816,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\radoslaw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\radoslaw\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5837,8 +5837,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Application\\Application.csproj"
+            "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Application\\Application.csproj"
             }
           }
         }

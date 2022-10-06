@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8qY/YOW3eVh5qIxOPAFvn0yekEIFSiU7OJiNQf1gLTiiHmkZUWhDrDAJdj5M0b8co2smLt0sWBqcp82qnIGBMA==",
+  "dgSpecHash": "wXnfvEv1sJ05ayiibg3sujjapUx7Dq+uBxVfMAFjqAknU+tc2z9P37uCWBZzpJdZWut7aA4M88/3A5raeQy0jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka.notification\\lappka.notification\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
