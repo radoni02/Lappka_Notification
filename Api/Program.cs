@@ -2,6 +2,7 @@ using Infrastructure;
 using Convey;
 using Application;
 using Api.Controllers;
+using Infrastructure.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -15,17 +16,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddGrpc();
+builder.Services.AddGrpc(x => x.Interceptors.Add<GrpcExceptionHandler>());
 var app = builder.Build();
 
+//app.UseMiddleware<ExceptionMiddleware>();
 app.MapGrpcService<NotificationController>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    //app.UseDeveloperExceptionPage();
+    //app.UseExceptionHandler("/error");
     app.UseSwagger();                     
     app.UseSwaggerUI();
 }
 
 //app.UseHttpsRedirection();
+
 
 app.UseAuthorization();
 

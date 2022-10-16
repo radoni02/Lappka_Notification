@@ -143,6 +143,10 @@
               "target": "Package",
               "version": "[1.0.541, )"
             },
+            "Grpc.Core.Api": {
+              "target": "Package",
+              "version": "[2.49.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

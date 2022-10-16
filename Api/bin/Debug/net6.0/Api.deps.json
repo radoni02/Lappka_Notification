@@ -1039,6 +1039,7 @@
           "Convey.CQRS.Commands": "1.0.541",
           "Convey.CQRS.Queries": "1.0.541",
           "Core": "1.0.0",
+          "Grpc.Core.Api": "2.49.0",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.9",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"

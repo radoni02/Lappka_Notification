@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions.grpcExceptions;
+using Application.Interfaces;
 using Convey.CQRS.Commands;
 using Core.Domain.Entities;
 using System;
@@ -24,12 +25,12 @@ namespace Application.Commands.Handlers
         {
             if(!Guid.TryParse(command.Id,out var UserId))
             {
-                throw new Exception();
+                throw new IdParseException();
             }
             var user = await _repo.GetUserById(UserId);
             if(user is null)
             {
-                throw new Exception();
+                throw new UserGrpcNotFoundException();
             }
             var notification = new NotificationHistory() 
             {

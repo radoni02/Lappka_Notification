@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions.grpcExceptions;
+using Application.Interfaces;
 using Convey.CQRS.Commands;
 using Core.Domain.Entities;
 using System;
@@ -25,7 +26,7 @@ namespace Application.Commands.Handlers
             var user = await _repo.GetUserByEmail(command.Email);
             if(user is null)
             {
-                throw new Exception();
+                throw new UserGrpcNotFoundException(); 
             }
             var notification = new NotificationHistory
             {

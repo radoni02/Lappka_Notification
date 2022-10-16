@@ -1,4 +1,5 @@
 ﻿using Infrastructure.DataBase;
+using Infrastructure.Exceptions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -13,6 +14,7 @@ namespace Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+            //services.AddScoped<ExceptionMiddleware>();
             services.AddPostgres(configuration);
             return services;
         }

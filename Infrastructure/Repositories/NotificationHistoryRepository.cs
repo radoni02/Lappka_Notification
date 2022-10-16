@@ -29,7 +29,7 @@ namespace Infrastructure.Repositories
             var user = await _contex.notificationHistories.FirstOrDefaultAsync(x => x.Id==id);
             if(user is null)
             {
-                throw new Exception();
+                //throw new Exception();
             }
             user.IsSend = true;
             await _contex.SaveChangesAsync();   

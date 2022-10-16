@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions.grpcExceptions;
+using Application.Interfaces;
 using Convey.CQRS.Commands;
 using Core.Domain.Entities;
 using System;
@@ -24,7 +25,7 @@ namespace Application.Commands.Handlers
         {
             if(!Guid.TryParse(command.UserId,out var userId))
             {
-                throw new Exception();
+                throw new IdParseException();
             }
             var user = new AppUser(userId, command.UserName, command.Email, command.FirstName, command.LastName);
             await _repo.CreateUserData(user);

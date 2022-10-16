@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G7wIgCtD30Qr4JfhzAvmbVYVp5S1pjidtI/ygbu5ArfNnHbEySTC+uhCb5WMb6rrrwSZPrTlzZ2XNPie7lvfiQ==",
+  "dgSpecHash": "J4bc0wRfQD//yzVKEBeTlKFx/HJgDhJffU38fb/KLMGYeLndEENGGJk0JCDR4f9eDKcVabMHEyIKMo9YOt6xEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\radoslaw\\Desktop\\praktyki\\lappka\\Notification\\notification\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\radoslaw\\.nuget\\packages\\convey.cqrs.commands\\1.0.541\\convey.cqrs.commands.1.0.541.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\convey.cqrs.queries\\1.0.541\\convey.cqrs.queries.1.0.541.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\figgle\\0.4.0\\figgle.0.4.0.nupkg.sha512",
+    "C:\\Users\\radoslaw\\.nuget\\packages\\grpc.core.api\\2.49.0\\grpc.core.api.2.49.0.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
@@ -74,6 +75,7 @@
     "C:\\Users\\radoslaw\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\radoslaw\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\radoslaw\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
