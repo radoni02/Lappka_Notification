@@ -1,3 +1,0 @@
-obj\Debug\net6.0\gRPC\Protos/Notification.cs \
-obj\Debug\net6.0\gRPC\Protos/NotificationGrpc.cs: C:/Users/radoslaw/.nuget/packages/grpc.tools/2.49.1/build/native/include/google/protobuf/empty.proto\
- gRPC/Protos/Notification.proto
